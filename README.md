@@ -36,4 +36,4 @@ This repository is organized into a modular structure to enhance maintainability
         ├── __init__.py
         ├── config.py
         └── main.py
-        ```
+```
