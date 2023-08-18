@@ -1,3 +1,4 @@
+"""Contains the main FastAPI application object."""
 import os
 import time
 
@@ -8,6 +9,7 @@ from src.api_diagnostics.schemas import ExceptionMessage
 from src.chads_vasc_score.router import router as cvs_router
 from src.config import settings
 
+# It's good practice to set default server timezone to UTC for standardization.
 os.environ["TZ"] = "UTC"
 time.tzset()
 
