@@ -1,4 +1,6 @@
-from fastapi import APIRouter, Depends
+"""Contains routing for CHA₂DS₂-VASc score calculator."""
+from fastapi import APIRouter
+from fastapi import Depends
 
 from src.chads_vasc_score.schemas import ChadsVascScore
 from src.chads_vasc_score.utils import unpack_and_calc_cvs

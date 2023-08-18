@@ -1,4 +1,4 @@
-"""Healthcheck Schema"""
+"""Provides schemas for API health checks and other various diagnostics."""
 from pydantic import BaseModel
 
 

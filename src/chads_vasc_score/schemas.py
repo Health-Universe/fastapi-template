@@ -1,9 +1,13 @@
+"""Provides input and output schemas for calculating CHA₂DS₂-VASc score."""
 from typing import Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
+from pydantic import Field
 
 
 class ChadsVascInput(BaseModel):
+    """Defines the input parameters for calculating CHA₂DS₂-VASc score."""
+
     age: int = Field(
         title="Age",
         ge=1,
@@ -45,6 +49,8 @@ class ChadsVascInput(BaseModel):
 
 
 class ChadsVascScore(BaseModel):
+    """Defines output for CHA₂DS₂-VASc score."""
+
     score: int = Field(
         title="CHA₂DS₂-VASc Score",
         example=1,
