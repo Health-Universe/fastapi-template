@@ -1,13 +1,12 @@
 """Contains the main FastAPI application object."""
-import os
-import time
+import os, time
 
 from fastapi import FastAPI
 
-from src.api_diagnostics.router import router as diagnostic_router
-from src.api_diagnostics.schemas import ExceptionMessage
-from src.chads_vasc_score.router import router as cvs_router
-from src.config import settings
+from api_diagnostics.router import router as diagnostic_router
+from api_diagnostics.schemas import ExceptionMessage
+from chads_vasc_score.router import router as cvs_router
+from config import settings
 
 # It's good practice to set default server timezone to UTC for standardization.
 os.environ["TZ"] = "UTC"
