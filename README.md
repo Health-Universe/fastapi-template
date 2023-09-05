@@ -23,15 +23,17 @@ This repository is organized into a modular structure to enhance maintainability
 
 ```plaintext
 {your_folder_name_here}/
-    ├── api_diagnostics/
-    │   ├── router.py
-    │   ├── schemas.py
-    │   └── __init__.py
-    ├── chads_vasc_score/
-    │   ├── router.py
-    │   ├── schemas.py
-    │   ├── utils.py
-    │   └── __init__.py
-    ├── config.py
-    └── main.py
+    ├── src/
+        ├── api_diagnostics/
+        │   ├── router.py
+        │   ├── schemas.py
+        │   └── __init__.py
+        ├── chads_vasc_score/
+        │   ├── router.py
+        │   ├── schemas.py
+        │   ├── utils.py
+        │   └── __init__.py
+        ├── __init__.py
+        ├── config.py
+        └── main.py
 ```

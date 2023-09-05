@@ -1,7 +1,7 @@
 """Provides routes for API health checks and other various diagnostics."""
 from fastapi import APIRouter
 
-from api_diagnostics.schemas import HealthCheckSchema
+from src.api_diagnostics.schemas import HealthCheckSchema
 
 router = APIRouter()
 

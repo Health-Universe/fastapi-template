@@ -1,7 +1,7 @@
 """Provides utilities and dependency injection for CHA₂DS₂-VASc score calculation."""
 from typing import Literal
 
-from chads_vasc_score.schemas import ChadsVascInput
+from src.chads_vasc_score.schemas import ChadsVascInput
 
 
 async def unpack_and_calc_cvs(cvs_data: ChadsVascInput) -> int:
